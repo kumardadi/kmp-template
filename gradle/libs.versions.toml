@@ -1,0 +1,29 @@
+[versions]
+namespace = "com.khudama.kmptemplate"
+agp = "8.1.1"
+kotlin = "1.9.0"
+compose-version = "1.4.0"
+compose-wasm-version = "1.4.0-dev-wasm09"
+ktor = "2.3.3"
+ktx = "1.12.0"
+androidx-activity-compose = "1.7.2"
+androidx-appcompat = "1.6.1"
+swing = "1.7.2"
+
+[libraries]
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktor-client-js = { group = "io.ktor", name = "ktor-client-js", version.ref = "ktor" }
+ktor-client-okhttp = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktor" }
+ktor-client-cio = { group = "io.ktor", name = "ktor-client-cio", version.ref = "ktor" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidx-activity-compose" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidx-appcompat" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "ktx" }
+kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-swing", version.ref = "swing" }
+
+[bundles]
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidBase = { id = "com.android.base", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+compose = { id = "org.jetbrains.compose", version.ref = "compose-wasm-version" }
